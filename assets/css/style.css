@@ -11,6 +11,17 @@ body header {
 body header nav {
   height: 6vh;
 }
+body header nav #navbarSupportedContent .navbar-nav .nav-item a {
+  color: #eee;
+  text-decoration: none;
+}
+body header nav #navbarSupportedContent .navbar-nav .nav-item a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+body header nav #navbarSupportedContent .navbar-nav .active .nav-link {
+  color: white !important;
+}
 body header .jumbotron {
   height: 54vh;
   background-color: rgba(0, 0, 0, 0);
@@ -20,6 +31,7 @@ body header .jumbotron {
 body header .jumbotron #text-splash {
   border: 5px solid white;
   padding: 2.5em;
+  background: rgba(0, 0, 0, 0.5);
 }
 body header .jumbotron #text-splash p {
   margin: 0px;
@@ -35,6 +47,7 @@ body #trips #trips-socorro .spacer {
 }
 body #trips #trips-socorro .trip-name {
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   border: 5px solid white;
   font-size: 2em;
   text-align: center;
@@ -51,16 +64,27 @@ body #trips #trips-guadalupe .spacer {
 }
 body #trips #trips-guadalupe .trip-name {
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   border: 5px solid white;
   font-size: 2em;
   text-align: center;
   width: 50%;
 }
 body #rates #sect-rates {
-  background-color: red;
+  background-color: lightblue;
+  padding: 3em;
 }
 body #rates #sect-wilderness {
-  background-color: blue;
+  background-color: #615648;
+  padding: 3em;
+}
+body #rates #sect-wilderness h2 {
+  color: #ffe2bc;
+  font-size: 5em;
+}
+body #rooms .staterooms {
+  background-color: #ffe2bc;
+  padding: 3em;
 }
 
 /*# sourceMappingURL=style.css.map */

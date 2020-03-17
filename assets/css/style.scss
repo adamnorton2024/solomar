@@ -1,11 +1,21 @@
 // Variables
 $font-raleway: 'Raleway', sans-serif;
 
+// Colors
 $transparent: rgba(0,0,0,0);
+$semi-trasparent: rgba(0,0,0,0.5);
+$link-active: white;
+$link: #eee;
+$link-visited: #eee;
+$link-hover: yellow;
+$bg-lightblue: lightblue;
+$accent-light: #ffe2bc;
+$accent-dark: #615648;
 
 // Mixin's
 @mixin trip-name{
     color: white;
+    background-color: $semi-trasparent;
     border: 5px solid white;
     font-size: 2em;
     text-align: center;
@@ -26,7 +36,34 @@ body{
             background-size: cover;
         nav{
             height:6vh;
+            #navbarSupportedContent{
+                .navbar-nav{
+                    .nav-item{
+                        a{
+                            color: $link;
+                            text-decoration: none;
+
+                            &:hover{
+                                color: $link-hover;
+                                text-decoration: none;
+                            }
+
+                            // &:visited{
+                            //     color: $link-visited;
+                            //     text-decoration: none;
+                            // }
+
+                        }
+                    }
+                    .active{
+                        .nav-link{
+                            color: $link-active !important;
+                        }
+                    }
+                } 
+            }
         }
+
         .jumbotron{
             height: 54vh;
             background-color: $transparent;
@@ -35,6 +72,7 @@ body{
             #text-splash{
                 border: 5px solid white;
                 padding: 2.5em;
+                background: $semi-trasparent;
                 p{
                     margin: 0px;
                 }
@@ -72,10 +110,23 @@ body{
 
     #rates{
             #sect-rates{
-                background-color: red;
+                background-color: $bg-lightblue;
+                padding: 3em;
             }
             #sect-wilderness{
-                background-color: blue;
+                background-color: $accent-dark;
+                padding: 3em;
+                h2{
+                    color: $accent-light;
+                    font-size: 5em;
+                }
             }
+    }
+
+    #rooms{
+        .staterooms{
+            background-color: $accent-light;
+            padding: 3em;
+        }
     }
 }
