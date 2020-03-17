@@ -1,3 +1,66 @@
-
+body {
+  font-family: "Raleway", sans-serif;
+}
+body header {
+  color: white;
+  height: 60vh;
+  background-image: url(../images/bg_solomarv.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body header nav {
+  height: 6vh;
+}
+body header .jumbotron {
+  height: 54vh;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px;
+  margin-bottom: 0px;
+}
+body header .jumbotron #text-splash {
+  border: 5px solid white;
+  padding: 2.5em;
+}
+body header .jumbotron #text-splash p {
+  margin: 0px;
+}
+body #trips #trips-socorro {
+  height: 40vh;
+  background-image: url(../images/bg_manta.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body #trips #trips-socorro .spacer {
+  height: 45%;
+}
+body #trips #trips-socorro .trip-name {
+  color: white;
+  border: 5px solid white;
+  font-size: 2em;
+  text-align: center;
+  width: 50%;
+}
+body #trips #trips-guadalupe {
+  height: 40vh;
+  background-image: url(../images/bg_shark.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body #trips #trips-guadalupe .spacer {
+  height: 45%;
+}
+body #trips #trips-guadalupe .trip-name {
+  color: white;
+  border: 5px solid white;
+  font-size: 2em;
+  text-align: center;
+  width: 50%;
+}
+body #rates #sect-rates {
+  background-color: red;
+}
+body #rates #sect-wilderness {
+  background-color: blue;
+}
 
 /*# sourceMappingURL=style.css.map */

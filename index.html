@@ -16,8 +16,93 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    Here's your page!
+    
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Schedule & Rates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trip Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">The Vessel</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Contact</button>
+                </form>
+            </div>
+        </nav>
 
+        <!-- Jumbotron -->
+        <div class="col">
+            <div class="jumbotron rounded-0 d-flex align-items-center">
+                <div class="col-md-6" id="text-splash">
+                    <h1>Welcome Aboard</h1>
+                    <h1>Solomar V</h1>
+                    <p class="lead text-justify">Traditional strong steel hull with wood interiors, the Solomar V is a classic. A
+                        112ft diving and exploration vessel with the best and most experienced crew Mexico has to offer.</p>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Trips -->
+    <section id="trips">
+        <div class="row mx-0">
+            <div class="col" id='trips-socorro'>
+                <div class="spacer"></div>
+                <div class="row mx-0">
+                    <div class="col d-flex justify-content-center">
+                        <p class="trip-name">SOCORRO</p>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+            </div>
+            <div class="col" id='trips-guadalupe'>
+                <div class="spacer"></div>
+                <div class="row mx-0">
+                    <div class="col d-flex justify-content-center">
+                        <p class="trip-name">GUADALUPE</p>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rates -->
+    <section id="rates">
+        <div class="row mx-0">
+            <div class="col" id='sect-rates'>
+                <h2 class="trip-name">SCHEDULE & RATES</h2>
+                <hr>
+                <h4>Socorro Season</h4>
+                <p>November to June</p>
+                <p>Departing from Cabo San Lucas</p>
+                <h4>Guadalupe Season</h4>
+                <p>August to October</p>
+                <p>Departing from Ensenada</p>
+            </div>
+            <div class="col" id='sect-wilderness'>
+                <h2 class="trip-name">WILDERNESS IS THE ULTIMATE LUXURY</h2>                
+            </div>
+        </div>
+    </section>
 
 
     <!-- Bootstrap & jQuery -->

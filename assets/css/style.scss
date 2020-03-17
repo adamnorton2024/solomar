@@ -1,2 +1,81 @@
 // Variables
 $font-raleway: 'Raleway', sans-serif;
+
+$transparent: rgba(0,0,0,0);
+
+// Mixin's
+@mixin trip-name{
+    color: white;
+    border: 5px solid white;
+    font-size: 2em;
+    text-align: center;
+    width: 50%;
+}
+
+// *{
+//     border: 1px dotted yellow;
+// }
+
+body{
+    font-family: $font-raleway;
+    header{
+        color: white;
+            height: 60vh;
+            background-image: url(../images/bg_solomarv.jpg);
+            background-position: center;
+            background-size: cover;
+        nav{
+            height:6vh;
+        }
+        .jumbotron{
+            height: 54vh;
+            background-color: $transparent;
+            padding: 0px;
+            margin-bottom: 0px;
+            #text-splash{
+                border: 5px solid white;
+                padding: 2.5em;
+                p{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+    #trips{
+            #trips-socorro{
+                height: 40vh;
+                background-image: url(../images/bg_manta.jpg);
+                background-position: center;
+                background-size: cover;
+                .spacer{
+                    height: 45%;
+                }
+                .trip-name{
+                    @include trip-name();
+                }
+            }
+            #trips-guadalupe{
+                height: 40vh;
+                background-image: url(../images/bg_shark.jpg);
+                background-position: center;
+                background-size: cover;
+                .spacer{
+                    height: 45%;
+                }
+                .trip-name{
+                    @include trip-name();
+                }
+
+            }
+    }
+
+    #rates{
+            #sect-rates{
+                background-color: red;
+            }
+            #sect-wilderness{
+                background-color: blue;
+            }
+    }
+}
