@@ -1,6 +1,20 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+body nav {
+  background-color: #253046;
+}
+body nav #navbarSupportedContent .navbar-nav .nav-item a {
+  color: #ccc;
+  text-decoration: none;
+}
+body nav #navbarSupportedContent .navbar-nav .nav-item a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+body nav #navbarSupportedContent .navbar-nav .active .nav-link {
+  color: white !important;
+}
 body header {
   color: white;
   height: 60vh;
@@ -8,22 +22,8 @@ body header {
   background-position: center;
   background-size: cover;
 }
-body header nav {
-  height: 6vh;
-}
-body header nav #navbarSupportedContent .navbar-nav .nav-item a {
-  color: #eee;
-  text-decoration: none;
-}
-body header nav #navbarSupportedContent .navbar-nav .nav-item a:hover {
-  color: yellow;
-  text-decoration: none;
-}
-body header nav #navbarSupportedContent .navbar-nav .active .nav-link {
-  color: white !important;
-}
 body header .jumbotron {
-  height: 54vh;
+  height: 60vh;
   background-color: rgba(0, 0, 0, 0);
   padding: 0px;
   margin-bottom: 0px;
@@ -33,8 +33,28 @@ body header .jumbotron #text-splash {
   padding: 2.5em;
   background: rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 411px) {
+  body header .jumbotron #text-splash {
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 320px) {
+  body header .jumbotron #text-splash h1 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 321) and (max-width: 500px) {
+  body header .jumbotron #text-splash h1 {
+    font-size: 2em;
+  }
+}
 body header .jumbotron #text-splash p {
   margin: 0px;
+}
+@media screen and (max-width: 500px) {
+  body header .jumbotron #text-splash p {
+    font-size: 1em;
+  }
 }
 body #trips #trips-socorro {
   height: 40vh;
@@ -53,6 +73,11 @@ body #trips #trips-socorro .trip-name {
   text-align: center;
   width: 50%;
 }
+@media screen and (max-width: 420px) {
+  body #trips #trips-socorro .trip-name {
+    width: 85%;
+  }
+}
 body #trips #trips-guadalupe {
   height: 40vh;
   background-image: url(../images/bg_shark.jpg);
@@ -70,6 +95,11 @@ body #trips #trips-guadalupe .trip-name {
   text-align: center;
   width: 50%;
 }
+@media screen and (max-width: 420px) {
+  body #trips #trips-guadalupe .trip-name {
+    width: 85%;
+  }
+}
 body #rates #sect-rates {
   background-color: lightblue;
   padding: 3em;
@@ -80,11 +110,41 @@ body #rates #sect-wilderness {
 }
 body #rates #sect-wilderness h2 {
   color: #ffe2bc;
-  font-size: 5em;
+  font-size: 4rem;
+}
+@media screen and (max-width: 365px) {
+  body #rates #sect-wilderness h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 366px) and (max-width: 425px) {
+  body #rates #sect-wilderness h2 {
+    font-size: 3rem;
+  }
 }
 body #rooms .staterooms {
-  background-color: #ffe2bc;
+  background-color: white;
   padding: 3em;
+}
+body #rooms .details {
+  background-color: #ffe2bc;
+  color: #615648;
+  padding: 3em;
+}
+body footer {
+  background-color: #615648;
+  color: #ffe2bc;
+  padding: 3em;
+}
+body footer a {
+  color: #ffe2bc;
+}
+body footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+body footer i {
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

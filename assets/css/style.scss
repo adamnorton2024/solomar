@@ -5,7 +5,7 @@ $font-raleway: 'Raleway', sans-serif;
 $transparent: rgba(0,0,0,0);
 $semi-trasparent: rgba(0,0,0,0.5);
 $link-active: white;
-$link: #eee;
+$link: #ccc;
 $link-visited: #eee;
 $link-hover: yellow;
 $bg-lightblue: lightblue;
@@ -20,6 +20,10 @@ $accent-dark: #615648;
     font-size: 2em;
     text-align: center;
     width: 50%;
+
+    @media screen and (max-width: 420px){
+        width: 85%;
+    }
 }
 
 // *{
@@ -28,44 +32,47 @@ $accent-dark: #615648;
 
 body{
     font-family: $font-raleway;
+
+    nav{
+        background-color: #253046;
+        #navbarSupportedContent{
+            .navbar-nav{
+                .nav-item{
+                    a{
+                        color: $link;
+                        text-decoration: none;
+
+                        &:hover{
+                            color: $link-hover;
+                            text-decoration: none;
+                        }
+
+                        // &:visited{
+                        //     color: $link-visited;
+                        //     text-decoration: none;
+                        // }
+
+                    }
+                }
+                .active{
+                    .nav-link{
+                        color: $link-active !important;
+                    }
+                }
+            } 
+        }
+    }
+
     header{
         color: white;
-            height: 60vh;
-            background-image: url(../images/bg_solomarv.jpg);
-            background-position: center;
-            background-size: cover;
-        nav{
-            height:6vh;
-            #navbarSupportedContent{
-                .navbar-nav{
-                    .nav-item{
-                        a{
-                            color: $link;
-                            text-decoration: none;
-
-                            &:hover{
-                                color: $link-hover;
-                                text-decoration: none;
-                            }
-
-                            // &:visited{
-                            //     color: $link-visited;
-                            //     text-decoration: none;
-                            // }
-
-                        }
-                    }
-                    .active{
-                        .nav-link{
-                            color: $link-active !important;
-                        }
-                    }
-                } 
-            }
-        }
+        height: 60vh;
+        background-image: url(../images/bg_solomarv.jpg);
+        background-position: center;
+        background-size: cover;
+        
 
         .jumbotron{
-            height: 54vh;
+            height: 60vh;
             background-color: $transparent;
             padding: 0px;
             margin-bottom: 0px;
@@ -73,8 +80,25 @@ body{
                 border: 5px solid white;
                 padding: 2.5em;
                 background: $semi-trasparent;
+                @media screen and (max-width: 411px){
+                        padding: 1em;
+                    }
+                h1{
+                    @media screen and (max-width: 320px){
+                        font-size: 1.5em;
+                    }
+                    
+                    @media screen and (min-width:321) and (max-width: 500px){
+                        font-size: 2em;
+                    }
+                }
+
                 p{
                     margin: 0px;
+                    
+                    @media screen and (max-width: 500px){
+                        font-size: 1em;
+                    }
                 }
             }
         }
@@ -118,15 +142,45 @@ body{
                 padding: 3em;
                 h2{
                     color: $accent-light;
-                    font-size: 5em;
+                    font-size: 4rem;
+
+                    @media screen and (max-width: 365px) {
+                        font-size: 2rem;
+                    }
+
+                    @media only screen and (min-width: 366px) and (max-width: 425px){
+                        font-size: 3rem;
+                    }
+
                 }
             }
     }
 
     #rooms{
         .staterooms{
-            background-color: $accent-light;
+            background-color: white;
             padding: 3em;
+        }
+        .details{
+            background-color: $accent-light;
+            color: $accent-dark;
+            padding: 3em;
+        }
+    }
+
+    footer{
+        background-color: $accent-dark;
+        color: $accent-light;
+        padding: 3em;
+        a{
+            color: $accent-light;
+            &:hover{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        i{
+            font-size: 2em;
         }
     }
 }

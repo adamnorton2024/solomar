@@ -14,18 +14,19 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Local Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8cbaa7f148.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark container">
-            <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">Solomar V</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -45,7 +46,12 @@
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Contact</button>
                 </form>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <header>
+        <!-- Navbar -->
+        
 
         <!-- Jumbotron -->
         <div class="col">
@@ -107,24 +113,24 @@
     <!-- Rooms -->
     <section id='rooms'>
         <div class="row mx-0">
-            <div class="col-md-8 staterooms">
-                <div class="row">
+            <div class="col-lg-8 col-md-12 staterooms">
+                <div class="row mx-0">
                     <p>As our guest, you will receive unmatched service and comfort while experiencing the best big animal diving on earth! There are 12 well appointed rooms with a/c and private bath aboard. The Solomar V, where customer service and comfort are our specialties.</p>
                 </div>
-                <div class="row room-types">
-                    <div class="col-lg-4">
+                <div class="row mx-0 room-types">
+                    <div class="col-md-4 col-sm-12">
                         <img src="/assets/images/room_single.png" alt="single room">
                         <p>SINGLE</p>
                         <p>STATEROOMS</p>
                         <p>2</p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-sm-12">
                         <img src="/assets/images/room_standard.png" alt="standard room">
                         <p>STANDARD</p>
                         <p>STATEROOMS</p>
                         <p>4</p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-sm-12">
                         <img src="/assets/images/room_superior.png" alt="superior room">
                         <p>SUPERIOR</p>
                         <p>STATEROOMS</p>
@@ -132,11 +138,45 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-
+            <div class="col-lg-4 col-md-12 details">
+                <h2 class="trip-name">SOLOMAR V</h2>
+                <hr>
+                <p>The interior of the Solomar V is outfitted in brass, rich mahogany, granite table tops and is completely carpeted. It is a gracious and beautiful boat.</p>
+                <p>All rooms with non-allergenic alternative down pillows and comforters.</p>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row mx-0">
+                <div class="col-md-6">
+                    <div class="row justify-content-center">
+                        <h2>SOCIAL MEDIA</h2>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col text-center"><a href="https://www.facebook.com/SolmarV/" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+                        <div class="col text-center"><a href="https://www.instagram.com/solmarv/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                        <div class="col text-center"><a href="https://youtube.com/user/SolmarV" target="_blank"><i class="fab fa-youtube"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row justify-content-center">
+                        <h2>CONTACT US</h2>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col text-center">
+                            <p>Reservations: (626)678-0919</p>
+                            <p>reservations@pelagicfleet.com</p>
+                            <p>Cabo Office: (624)144-4482</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
 
 
     <!-- Bootstrap & jQuery -->
